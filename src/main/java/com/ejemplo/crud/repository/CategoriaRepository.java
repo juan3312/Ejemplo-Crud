@@ -1,18 +1,10 @@
 package com.ejemplo.crud.repository;
 
 import com.ejemplo.crud.model.Categoria;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
-
-public interface CategoriaRepository extends com.ejemplo.crud.repository.JpaRepository<Categoria, Long> {
-    List<Categoria> findAll();
-
-    Optional<Object> findById(Long id);
-
-    Categoria save(Categoria categoria);
-
-    default void deleteById(Long id) {
-
-    }
+@Repository
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
+    // No necesitas redefinir los métodos aquí, JpaRepository ya los proporciona.
 }
