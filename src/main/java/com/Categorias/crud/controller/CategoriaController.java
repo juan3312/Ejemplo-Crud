@@ -1,7 +1,7 @@
-package com.ejemplo.crud.controller;
+package com.Categorias.crud.controller;
 
-import com.ejemplo.crud.model.Categoria;
-import com.ejemplo.crud.service.CategoriaService;
+import com.Categorias.crud.model.Categoria;
+import com.Categorias.crud.service.CategoriaService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

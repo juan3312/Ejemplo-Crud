@@ -1,8 +1,7 @@
-package com.ejemplo.crud.service;
+package com.Categorias.crud.service;
 
-import com.ejemplo.crud.model.Categoria;
-import com.ejemplo.crud.repository.CategoriaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.Categorias.crud.model.Categoria;
+import com.Categorias.crud.repository.CategoriaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,8 +10,11 @@ import java.util.Optional;
 @Service
 public class CategoriaService {
 
-    @Autowired
-    private CategoriaRepository categoriaRepository;
+    private final CategoriaRepository categoriaRepository;
+
+    public CategoriaService(CategoriaRepository categoriaRepository) {
+        this.categoriaRepository = categoriaRepository;
+    }
 
     public List<Categoria> encontrarTodos() {
         return categoriaRepository.findAll();
