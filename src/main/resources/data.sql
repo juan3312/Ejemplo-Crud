@@ -1,1 +1,3 @@
-INSERT INTO categoria (nombre, descripcion) VALUES ('Categoria1', 'Descripción de Categoria 1');
+INSERT INTO categoria (nombre, descripcion) VALUES ('Verduta', 'Descripción de Categoria');
+INSERT INTO categoria (nombre, descripcion) VALUES ('Fruta', 'Descripción de Categoria');
+INSERT INTO categoria (nombre, descripcion) VALUES ('Carnes', 'Descripción de Categoria');
